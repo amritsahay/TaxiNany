@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VehicleTypeView" customModule="TaxiNanny" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="eYu-Yj-sfV" id="moI-nH-uO2"/>
+                <outlet property="car_image" destination="QcD-Fh-boQ" id="qcN-bc-Mn2"/>
+                <outlet property="car_name" destination="OGb-3j-LBM" id="jZG-ER-xgo"/>
+                <outlet property="check" destination="uAc-ix-LXW" id="SHk-Ho-8UZ"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="bYY-eZ-bqf"/>
+                <outlet property="frame_view" destination="mI7-QZ-Q2I" id="MBe-kQ-Usa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="63"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mI7-QZ-Q2I">
+                    <rect key="frame" x="6" y="6" width="340" height="51"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sedan" translatesAutoresizingMaskIntoConstraints="NO" id="QcD-Fh-boQ">
+                            <rect key="frame" x="8" y="19" width="37" height="13"/>
+                            <color key="tintColor" red="0.58834526840000001" green="0.72100321290000002" blue="0.21010002520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Micro" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGb-3j-LBM">
+                            <rect key="frame" x="55" y="16" width="40.5" height="19"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="uAc-ix-LXW">
+                            <rect key="frame" x="309" y="14" width="23" height="23"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="uAc-ix-LXW" firstAttribute="centerY" secondItem="mI7-QZ-Q2I" secondAttribute="centerY" id="Iqn-fJ-Sl4"/>
+                        <constraint firstAttribute="trailing" secondItem="uAc-ix-LXW" secondAttribute="trailing" constant="8" id="RzG-mj-QYA"/>
+                        <constraint firstItem="OGb-3j-LBM" firstAttribute="leading" secondItem="mI7-QZ-Q2I" secondAttribute="leading" constant="55" id="ZsS-uk-AKE"/>
+                        <constraint firstItem="QcD-Fh-boQ" firstAttribute="leading" secondItem="mI7-QZ-Q2I" secondAttribute="leading" constant="8" id="gmA-ST-cCT"/>
+                        <constraint firstItem="OGb-3j-LBM" firstAttribute="centerY" secondItem="mI7-QZ-Q2I" secondAttribute="centerY" id="rUc-3R-Rfy"/>
+                        <constraint firstItem="QcD-Fh-boQ" firstAttribute="centerY" secondItem="mI7-QZ-Q2I" secondAttribute="centerY" id="v8c-sQ-0RR"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYu-Yj-sfV">
+                    <rect key="frame" x="0.0" y="0.0" width="352" height="63"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="63" id="Nok-vz-ehL"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="eYu-Yj-sfV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="3iM-fQ-IGV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mI7-QZ-Q2I" secondAttribute="trailing" constant="6" id="7mR-Yf-leZ"/>
+                <constraint firstItem="mI7-QZ-Q2I" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="6" id="D1k-qx-75D"/>
+                <constraint firstItem="mI7-QZ-Q2I" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="Eeh-wp-Z50"/>
+                <constraint firstItem="eYu-Yj-sfV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Ouk-hM-snf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mI7-QZ-Q2I" secondAttribute="bottom" constant="6" id="UVk-Tf-eAf"/>
+                <constraint firstItem="eYu-Yj-sfV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZS3-YU-0CE"/>
+                <constraint firstItem="eYu-Yj-sfV" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="clj-aO-YLy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="113.59999999999999" y="-112.89355322338831"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Check" width="23.5" height="23"/>
+        <image name="Sedan" width="37.5" height="13.5"/>
+    </resources>
+</document>

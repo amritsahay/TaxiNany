@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="wj8-k6-6QC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="9ol-Fy-EPf">
+                                <rect key="frame" x="87" y="205" width="201" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9vj-JD-aCF"/>
+                                    <constraint firstAttribute="width" secondItem="9ol-Fy-EPf" secondAttribute="height" multiplier="922:459" id="H6O-ok-DyA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TaxiNanny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2L-lN-8S9">
+                                <rect key="frame" x="116" y="315" width="143" height="37"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick &amp; Drop Service for kids" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmM-dm-iam">
+                                <rect key="frame" x="94" y="352" width="187.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5287742018699646" green="0.67463022470474243" blue="0.24675813317298889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xmM-dm-iam" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="1AI-Ow-5J3"/>
+                            <constraint firstItem="xmM-dm-iam" firstAttribute="top" secondItem="Y2L-lN-8S9" secondAttribute="bottom" id="1QO-wi-t3b"/>
+                            <constraint firstItem="wj8-k6-6QC" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="A1e-iC-KDn"/>
+                            <constraint firstItem="9ol-Fy-EPf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JbR-UW-brm"/>
+                            <constraint firstItem="wj8-k6-6QC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Kmq-Mv-Nfq"/>
+                            <constraint firstItem="wj8-k6-6QC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pb5-9D-QVo"/>
+                            <constraint firstItem="wj8-k6-6QC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wcm-cO-jNJ"/>
+                            <constraint firstItem="Y2L-lN-8S9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="WdP-tg-gg2"/>
+                            <constraint firstItem="Y2L-lN-8S9" firstAttribute="top" secondItem="9ol-Fy-EPf" secondAttribute="bottom" constant="10" id="ZPg-jx-uyX"/>
+                            <constraint firstItem="Y2L-lN-8S9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="c2U-AX-Xyn"/>
+                            <constraint firstItem="Y2L-lN-8S9" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jdO-wS-qDy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash" width="1280" height="2276"/>
+        <image name="logo" width="922.5" height="459.5"/>
+    </resources>
+</document>

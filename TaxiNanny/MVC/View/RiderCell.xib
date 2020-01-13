@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RiderCell" id="KGk-i7-Jjw" customClass="RiderCell" customModule="TaxiNanny" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xgf-21-1ks" customClass="BorderView" customModule="TaxiNanny" customModuleProvider="target">
+                        <rect key="frame" x="16" y="10.5" width="50" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User2" translatesAutoresizingMaskIntoConstraints="NO" id="k03-XV-dRx">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="k03-XV-dRx" firstAttribute="leading" secondItem="Xgf-21-1ks" secondAttribute="leading" id="AFx-cB-qHV"/>
+                            <constraint firstAttribute="trailing" secondItem="k03-XV-dRx" secondAttribute="trailing" id="Dqk-UV-N64"/>
+                            <constraint firstItem="k03-XV-dRx" firstAttribute="top" secondItem="Xgf-21-1ks" secondAttribute="top" id="Mpx-P6-X4z"/>
+                            <constraint firstAttribute="width" secondItem="Xgf-21-1ks" secondAttribute="height" multiplier="1:1" id="RPX-io-iY2"/>
+                            <constraint firstAttribute="bottom" secondItem="k03-XV-dRx" secondAttribute="bottom" id="f21-Tw-oSi"/>
+                            <constraint firstAttribute="height" constant="50" id="l8I-on-hOb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a child" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVH-AA-o0U">
+                        <rect key="frame" x="74" y="25.5" width="84" height="19.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrW-fi-QVd">
+                        <rect key="frame" x="284" y="25.5" width="20" height="20"/>
+                        <color key="backgroundColor" red="0.61960784310000006" green="0.75686274509999996" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Xdg-x8-egy"/>
+                            <constraint firstAttribute="width" constant="20" id="qtx-Kt-7LG"/>
+                        </constraints>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HrW-fi-QVd" firstAttribute="centerY" secondItem="k03-XV-dRx" secondAttribute="centerY" id="Jfm-6y-thf"/>
+                    <constraint firstItem="RVH-AA-o0U" firstAttribute="centerY" secondItem="k03-XV-dRx" secondAttribute="centerY" id="Qhg-MW-koK"/>
+                    <constraint firstItem="Xgf-21-1ks" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="SKK-io-W4K"/>
+                    <constraint firstItem="Xgf-21-1ks" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Zas-km-3fb"/>
+                    <constraint firstItem="RVH-AA-o0U" firstAttribute="leading" secondItem="Xgf-21-1ks" secondAttribute="trailing" constant="8" id="icK-78-6Ju"/>
+                    <constraint firstAttribute="bottom" secondItem="Xgf-21-1ks" secondAttribute="bottom" constant="10" id="noA-Ly-k4m"/>
+                    <constraint firstItem="Xgf-21-1ks" firstAttribute="width" secondItem="Xgf-21-1ks" secondAttribute="height" multiplier="1:1" id="qml-Dd-MPw"/>
+                    <constraint firstAttribute="trailing" secondItem="HrW-fi-QVd" secondAttribute="trailing" constant="16" id="uzN-ux-wP3"/>
+                    <constraint firstItem="Xgf-21-1ks" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zP0-Ab-VMO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkButton" destination="HrW-fi-QVd" id="15b-GK-cFe"/>
+                <outlet property="photo_view" destination="k03-XV-dRx" id="Mcm-p5-4CJ"/>
+                <outlet property="rider_name" destination="RVH-AA-o0U" id="9IH-OB-Ud6"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="46.776611694152926"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="User2" width="500" height="500"/>
+    </resources>
+</document>
